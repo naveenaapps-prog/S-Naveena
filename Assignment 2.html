@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kendriya Vidyalaya Registration Form</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            margin-bottom: 50px;
+            padding: 25px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>KENDRIYA VIDYALAYA</h1>
+        <h2>Registration Form</h2>
+        <img src="KV logo.png" alt="KV Logo" width="200" height="200">
+    </center>
+
+    <form action="https://postman-echo.com/post" method="post">
+        <fieldset>
+            <center>
+                <h3>"Education is the most powerful weapon which you can use to change the world"</h3>
+                <video width="500" height="500" controls autoplay muted>
+                    <source src="KV video.mp4" type="video/mp4">
+                </video>
+            </center>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="3" maxlength="20">
+            <br><br>
+
+            <label for="father">Father Name</label>
+            <input type="text" id="father" name="father_name" placeholder="Enter your Father name" required minlength="3" maxlength="20">
+            <br><br>
+
+            <label for="mother">Mother Name</label>
+            <input type="text" id="mother" name="mother_name" placeholder="Enter your Mother name" required minlength="3" maxlength="20">
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="18" max="30">
+            <br><br>
+
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <br><br>
+
+            <label for="email">Email Id</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email id">
+            <br><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone_number" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+            <label>Select Group</label>
+            <input type="radio" name="group" value="PCMC"> PCMC
+            <input type="radio" name="group" value="PCMB"> PCMB
+            <input type="radio" name="group" value="Biology"> Biology
+            <input type="radio" name="group" value="History"> History
+            <input type="radio" name="group" value="Commerce"> Commerce
+            <br><br>
+
+            <table border="3" cellpadding="10" cellspacing="0">
+                <caption><h4>Marks Secured in 10th</h4></caption>
+                <thead>
+                    <tr>
+                        <th>S No</th>
+                        <th>Subjects</th>
+                        <th>Max Marks</th>
+                        <th>Marks Obtained</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>English</td>
+                        <td>100</td>
+                        <td><input type="number" min="0" max="100" name="english_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hindi</td>
+                        <td>100</td>
+                        <td><input type="number" min="0" max="100" name="hindi_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Maths</td>
+                        <td>100</td>
+                        <td><input type="number" min="0" max="100" name="maths_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Science</td>
+                        <td>100</td>
+                        <td><input type="number" min="0" max="100" name="science_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Social Studies</td>
+                        <td>100</td>
+                        <td><input type="number" min="0" max="100" name="social_marks"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <label for="birth_cert">Upload Birth Certificate</label>
+            <input type="file" id="birth_cert" name="birth_certificate" accept=".doc,.docx,.pdf">
+            <br><br>
+
+            <label for="tenth_cert">Upload 10th Certificate</label>
+            <input type="file" id="tenth_cert" name="tenth_certificate" accept=".doc,.docx,.pdf">
+            <br><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
